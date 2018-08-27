@@ -36,7 +36,6 @@ extern "C" const AMX_NATIVE_INFO native_list[] = {
 PLUGIN_EXPORT int PLUGIN_CALL AmxLoad(AMX* amx)
 {
     return amx_Register(amx, native_list, -1);
-    //return pawn_natives::AmxLoad(amx);
 }
 
 PLUGIN_EXPORT int PLUGIN_CALL Unload()
